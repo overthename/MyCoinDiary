@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".FragmentE">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal">
+        <LinearLayout
+
+            android:layout_weight="9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_marginLeft="15dp"
+                android:textSize="25dp"
+                android:id="@+id/searchyeard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:hint="2021"
+                />
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 년 "
+                />
+            <EditText
+                android:textSize="25dp"
+                android:id="@+id/searchmonthd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="6"
+                android:text="" />
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="월"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/searchbuttond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="검색"/>
+
+    </LinearLayout>
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textColor="#E91E63"
+                android:textSize="30dp"
+                android:id="@+id/resultyear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:hint="2021"
+                />
+            <TextView
+                android:textColor="#E91E63"
+                android:textSize="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 년 "
+                />
+            <TextView
+                android:textColor="#E91E63"
+                android:textSize="30dp"
+                android:id="@+id/resultmonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="6"
+                android:text="" />
+            <TextView
+                android:textColor="#E91E63"
+                android:textSize="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="월"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="종합입금금액:"
+android:textColor="@color/black"
+                android:textSize="25dp"/>
+            <TextView
+                android:id="@+id/sumcoinstartd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 00 "
+                android:textSize="25dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="종합출금금액:"
+
+                android:textSize="25dp"/>
+            <TextView
+                android:id="@+id/sumcoinendd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 00 "
+                android:textSize="25dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="종합손익금액:"
+                android:textColor="@color/black"
+                android:textSize="25dp"/>
+            <TextView
+                android:id="@+id/sumcoinprofitd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 00 "
+                android:textSize="25dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="듣기" />
+        <Button
+            android:id="@+id/btnPause"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="일시정지" />
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="중지" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#E91E63"
+            android:text="진행시간" />
+
+        <SeekBar
+            android:id="@+id/pbMP3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+
+</LinearLayout>

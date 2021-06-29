@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FragmentC">
+
+    <!-- TODO: Update blank fragment layout -->
+<ScrollView
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+   android:layout_height="550dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#E91E63"
+        android:textSize="22dp"
+        android:id="@+id/charttextstart"
+        android:text="&lt; 입금금액별 2021년차트 &gt;"
+       />
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/linechart1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+       />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_height="350dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:textColor="#E91E63"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&lt; 출금금액별 2021년차트 &gt;"
+        android:id="@+id/charttextend"/>
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_weight="3"
+        android:id="@+id/linechart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="1"
+        android:layout_height="350dp"
+        android:orientation="vertical">
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:textColor="#E91E63"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/charttextprofit"
+        android:text="&lt; 손익금액별 2021년차트 &gt;"
+/>
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_weight="3"
+        android:id="@+id/linechart3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/itemlogout"
+        android:title="로그아웃">
+    </item>
+    <item
+        android:id="@+id/itemquit"
+        android:title="종료">
+    </item>
+    <item
+        android:id="@+id/itemnext"
+        android:title="다른계정으로 로그인">
+    </item>
+
+</menu>
